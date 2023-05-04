@@ -3,7 +3,7 @@ package com.yuu.foundation.common.basic.mvvm.base
 import android.util.Log
 import androidx.lifecycle.*
 import com.yuu.foundation.common.basic.mvvm.impl.IViewBehaviour
-import com.yuu.foundation.common.basic.base.impl.IViewModelLifecycle
+import com.yuu.foundation.common.basic.mvvm.impl.IViewModelLifecycle
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.Job
