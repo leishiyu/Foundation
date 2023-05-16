@@ -109,7 +109,7 @@ open class BaseDialogFragment : DialogFragment() {
      */
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
         //加载布局
-        rootView = inflater.inflate(dialogOptions.layoutId, container, false)
+        rootView = layoutView() ?: inflater.inflate(dialogOptions.layoutId, container, false)
         //unDisplayViewSize(view)
         if (!dialogOptions.isLazy) {
             convertView(ViewHolder(rootView), this)
@@ -440,5 +440,5 @@ open class BaseDialogFragment : DialogFragment() {
         }
     }
 
-
+    open fun layoutView():View? =null
 }
